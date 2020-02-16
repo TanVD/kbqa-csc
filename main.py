@@ -16,6 +16,7 @@ def main():
     for data in questions:
         question = data["q"]
         expected_ids = set(data["entities"])
+        total_expected += len(expected_ids)
         ids = set()
         print(question)
         entities = syntactic(ner(question))
@@ -31,10 +32,13 @@ def main():
         total_correct += correct_size
         total_incorrect += incorrect_size
 
+        print(f'EXPECTED: {len(expected_ids)}')
         print(f'CORRECT: {correct_size}')
         print(f'INCORRECT: {incorrect_size}')
 
         print()
+
+    print(f'TOTAL EXPECTED: {total_expected}')
 
     print(f"TOTAL CORRECT {total_correct}")
     print(f"TOTAL INCORRECT {total_incorrect}")

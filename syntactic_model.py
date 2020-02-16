@@ -10,7 +10,7 @@ def is_noun(word):
 
 
 def is_noun_modifier(word):
-    return word["deprel"] in {"nmod", "appos", "amod", "flat"}
+    return word["deprel"] in {"nmod", "appos"}
 
 
 def syntactic(ner):
