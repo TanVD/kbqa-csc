@@ -1,6 +1,6 @@
 from deeppavlov import build_model
 
-syntactic_model = build_model("ru_syntagrus_joint_parsing")
+syntactic_model = build_model("ru_syntagrus_joint_parsing", download=True)
 syntactic_model["main"].to_output_string = False
 syntactic_model["main"].output_format = "json"
 

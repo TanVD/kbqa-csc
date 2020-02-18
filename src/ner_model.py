@@ -1,6 +1,6 @@
 from deeppavlov import configs, build_model
 
-ner_model = build_model(configs.ner.ner_rus_bert)
+ner_model = build_model(configs.ner.ner_rus_bert, download=True)
 
 
 def ner(query):

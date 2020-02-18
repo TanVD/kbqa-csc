@@ -33,7 +33,7 @@ def search_wikipedia(query):
 
     search = data['query']['search']
     if len(search) == 0:
-        return {"Not found"}
+        return {"NOT FOUND"}
 
     title = search[0]['title']
     id = get_wikidata_ids(title)

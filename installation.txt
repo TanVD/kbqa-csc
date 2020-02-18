@@ -1,0 +1,4 @@
+python3 -m deeppavlov install squad_bert
+python3 -m deeppavlov install ner_rus_bert
+python3 -m deeppavlov install ru_syntagrus_joint_parsing
+python3 -m deeppavlov install syntax_ru_syntagrus_bert
