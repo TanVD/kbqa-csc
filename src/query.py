@@ -18,27 +18,35 @@ class QueryType(Enum):
     UNKNOWN = 6
 
 
-def get_type_of(synt_res):
+def get_types_of(synt_res):
     lemmas = {synt_word["lemma"] for synt_word in synt_res}
-    if is_one_of(lemmas, [{"где"}, {"какой", "принадлежит"}]):
-        return QueryType.LOCATION
-    elif is_one_of(lemmas, [{"столица"}, {"какой", "город"}]):
-        return QueryType.CAPITAL
-    elif is_one_of(lemmas, [{"страна", "какой"}]):
-        return QueryType.COUNTRY
-    elif is_one_of(lemmas, [{"создатель"}, {"кто", "создать"}]):
-        return QueryType.CREATOR
-    elif is_one_of(lemmas, [{"автор"}, {"кто", "придумать"}, {"какой", "придумать"}, {"кто", "написать"}]):
-        return QueryType.AUTHOR
 
-    return QueryType.UNKNOWN
+    if is_one_of(lemmas, [{"столица"}, {"какой", "город", "центр"}]):
+        return [QueryType.CAPITAL]
+    elif is_one_of(lemmas, [{"в", "какой", "страна"}, {"какой", "страна"}]):
+        return [QueryType.COUNTRY]
+    elif is_one_of(lemmas, [{"в", "какой", "город"}, {"какой", "город"}]):
+        return [QueryType.LOCATION]
+    elif is_one_of(lemmas, [{"где"}, {"какой", "принадлежит"}]):
+        return [QueryType.LOCATION, QueryType.COUNTRY]
+
+    elif is_one_of(lemmas, [{"создатель"}, {"кто", "создать"},
+                            {"автор"}, {"кто", "придумать"},
+                            {"какой", "придумать"},
+                            {"кто", "написать"}]):
+        return [QueryType.AUTHOR, QueryType.CREATOR]
+
+    return [QueryType.UNKNOWN]
 
 
-def generate_request(query_type, entities):
-    if query_type == QueryType.UNKNOWN:
+def generate_request(query_types, entities):
+    if query_types[0] == QueryType.UNKNOWN:
         return ""
 
-    where = " . ".join([f"wd:{entity} wdt:P{query_type.value} ?answer" for entity in entities])
+    where = " . ".join(
+        [f"wd:{entity}  {'|'.join([f'wdt:P{query_type.value}' for query_type in query_types])} ?answer"
+         for entity in entities]
+    )
     return f'SELECT ?answer WHERE {"{ " + where + " }"}'
 
 

@@ -3,7 +3,7 @@ import json
 from src.api import search_wikipedia
 from src.entity_extraction import extract_entity
 from src.ner_model import ner
-from src.query import get_type_of, QueryType, generate_request, get_request
+from src.query import get_types_of, QueryType, generate_request, get_request
 from src.syntactic_model import syntactic
 
 questions = json.loads(open("data.json", "r").read())
@@ -32,23 +32,26 @@ def main():
             wiki_ids = search_wikipedia(query)
             ids.update([wiki_id for wiki_id in wiki_ids if wiki_id != "NOT FOUND"])
 
-        question_type = get_type_of(synt_res)
+        question_types = get_types_of(synt_res)
 
-        request = generate_request(question_type, ids)
+        request = generate_request(question_types, ids)
 
         res = get_request(request)
 
         if len(res) != 0:
             got += 1
 
-        if set(res) == set(answer) and not answer:
+        if set(res) == set(answer) and answer:
             correct += 1
+
+        if set(res) != set(answer) and answer:
+            print(f'EXPECTED {json.dumps(answer)}, but got {json.dumps(res)}')
 
         results.append({
             "uid": uid,
             "question": question,
             "entities": list(ids),
-            "type": question_type.name,
+            "type": [question_type.name for question_type in question_types],
             "request": request,
             "result": res
         })

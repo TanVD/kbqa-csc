@@ -1,3 +1,7 @@
+def is_banned(word):
+    return word in {"страна", "город", "автор", "писатель"}
+
+
 def is_proper_noun(word):
     return word["upos"] == "PROPN"
 
@@ -18,7 +22,7 @@ def filter_into(result, ner_tokens, parsed, seen, lambda_filter):
 
         synt_word = parsed[i]
 
-        if lambda_filter(synt_word):
+        if lambda_filter(synt_word) and not is_banned(synt_word["lemma"]):
             seen.add(i)
             words[synt_word["id"]] = synt_word["lemma"]
 
