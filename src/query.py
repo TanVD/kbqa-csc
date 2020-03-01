@@ -22,32 +22,30 @@ def get_types_of(synt_res):
     lemmas = {synt_word["lemma"] for synt_word in synt_res}
 
     if is_one_of(lemmas, [{"столица"}, {"какой", "город", "центр"}]):
-        return [QueryType.CAPITAL]
+        return [QueryType.CAPITAL, QueryType.LOCATION]
     elif is_one_of(lemmas, [{"в", "какой", "страна"}, {"какой", "страна"}]):
-        return [QueryType.COUNTRY]
+        return [QueryType.COUNTRY, QueryType.LOCATION]
     elif is_one_of(lemmas, [{"в", "какой", "город"}, {"какой", "город"}]):
-        return [QueryType.LOCATION]
-    elif is_one_of(lemmas, [{"где"}, {"какой", "принадлежит"}]):
+        return [QueryType.LOCATION, QueryType.COUNTRY]
+    elif is_one_of(lemmas, [{"где"}, {"какой", "принадлежит"}, {"в", "какой"}]):
         return [QueryType.LOCATION, QueryType.COUNTRY]
 
-    elif is_one_of(lemmas, [{"создатель"}, {"кто", "создать"},
-                            {"автор"}, {"кто", "придумать"},
-                            {"какой", "придумать"},
-                            {"кто", "написать"}]):
+    elif is_one_of(lemmas, [{"создатель"}, {"автор"}, {"кто"}, {"какой", "придумать"}]):
         return [QueryType.AUTHOR, QueryType.CREATOR]
 
     return [QueryType.UNKNOWN]
 
 
-def generate_request(query_types, entities):
+def generate_requests(query_types, entities):
     if query_types[0] == QueryType.UNKNOWN:
-        return ""
+        return []
 
-    where = " . ".join(
-        [f"wd:{entity}  {'|'.join([f'wdt:P{query_type.value}' for query_type in query_types])} ?answer"
-         for entity in entities]
-    )
-    return f'SELECT ?answer WHERE {"{ " + where + " }"}'
+    queries = []
+    for query_type in query_types:
+        where = " . ".join([f"wd:{entity} wdt:P{query_type.value} ?answer" for entity in entities])
+        queries.append(f'SELECT ?answer WHERE {"{ " + where + " }"}')
+
+    return queries
 
 
 def get_request(request):
