@@ -1,3 +1,6 @@
+import re
+
+
 def is_banned(word):
     return word in {"страна", "город", "автор", "писатель"}
 
@@ -33,35 +36,49 @@ def filter_into(result, ner_tokens, parsed, seen, lambda_filter):
         result.append(words)
 
 
-def extract_entity(ner_res, synt_res):
+def extract_quoted_part(query, result):
+    obj = re.findall("\".*?\"", query)
+    if obj:
+        result.append({1: obj[0].strip('"')})
+        return
+    obj = re.findall("«.*?»", query)
+    if obj:
+        result.append({1: obj[0].strip('«').strip('»')})
+    return
+
+
+def extract_entity(query, ner_res, synt_res):
     tokens, ner_tokens = ner_res
 
     result = []
     seen = set()
     words = {}
 
-    for i, value in enumerate(ner_tokens):
-        synt_word = synt_res[i]
+    extract_quoted_part(query, result)
 
-        if value.startswith("B-"):
-            seen.add(i)
-            words[synt_word["id"]] = synt_word["lemma"]
-            while synt_word["head"] != "0":
-                cur_i = int(synt_word["head"]) - 1
-                if not is_noun_modifier(synt_word):
-                    break
-                synt_word = synt_res[cur_i]
-                seen.add(cur_i)
-                words[synt_word["id"]] = (synt_word["lemma"])
-        elif value.startswith("I-"):
-            seen.add(i)
-            words[synt_word["id"]] = synt_word["lemma"]
-        elif value == "O" and len(words) != 0:
+    if not result:
+        for i, value in enumerate(ner_tokens):
+            synt_word = synt_res[i]
+
+            if value.startswith("B-"):
+                seen.add(i)
+                words[synt_word["id"]] = synt_word["lemma"]
+                while synt_word["head"] != "0":
+                    cur_i = int(synt_word["head"]) - 1
+                    if not is_noun_modifier(synt_word):
+                        break
+                    synt_word = synt_res[cur_i]
+                    seen.add(cur_i)
+                    words[synt_word["id"]] = (synt_word["lemma"])
+            elif value.startswith("I-"):
+                seen.add(i)
+                words[synt_word["id"]] = synt_word["lemma"]
+            elif value == "O" and len(words) != 0:
+                result.append(words)
+                words = {}
+
+        if len(words) != 0:
             result.append(words)
-            words = {}
-
-    if len(words) != 0:
-        result.append(words)
 
     if not result:
         filter_into(result, ner_tokens, synt_res, seen, is_proper_noun)

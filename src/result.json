@@ -6,10 +6,16 @@
       "Q25173"
     ],
     "type": [
-      "UNKNOWN"
+      "LOCATION",
+      "COUNTRY"
     ],
-    "requests": [],
-    "result": []
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q25173 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q25173 wdt:P17 ?answer }"
+    ],
+    "result": [
+      "Q97"
+    ]
   },
   {
     "uid": 1,
@@ -33,10 +39,10 @@
     "uid": 2,
     "question": "Какой художник заставил запорожцев написать письмо турецкому султану?",
     "entities": [
-      "Q133492",
+      "Q43292",
       "Q1028181",
-      "Q744996",
-      "Q43292"
+      "Q133492",
+      "Q744996"
     ],
     "type": [
       "UNKNOWN"
@@ -100,16 +106,16 @@
     "uid": 6,
     "question": "В какой стране находятся две великие реки – Тигр и Евфрат?",
     "entities": [
-      "Q19939",
-      "Q34589"
+      "Q34589",
+      "Q19939"
     ],
     "type": [
       "COUNTRY",
       "LOCATION"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q19939 wdt:P17 ?answer . wd:Q34589 wdt:P17 ?answer }",
-      "SELECT ?answer WHERE { wd:Q19939 wdt:P276 ?answer . wd:Q34589 wdt:P276 ?answer }"
+      "SELECT ?answer WHERE { wd:Q34589 wdt:P17 ?answer . wd:Q19939 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q34589 wdt:P276 ?answer . wd:Q19939 wdt:P276 ?answer }"
     ],
     "result": []
   },
@@ -138,23 +144,31 @@
       "Q12418"
     ],
     "type": [
-      "UNKNOWN"
+      "LOCATION",
+      "COUNTRY"
     ],
-    "requests": [],
-    "result": []
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q12418 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q12418 wdt:P17 ?answer }"
+    ],
+    "result": [
+      "Q19675"
+    ]
   },
   {
     "uid": 9,
     "question": "Кто плавал на папирусной лодке \"Ра\" и на плоту \"Кон-Тики\"?",
     "entities": [
-      "Q738538",
-      "Q1252904",
-      "Q394206"
+      "Q1252904"
     ],
     "type": [
-      "UNKNOWN"
+      "AUTHOR",
+      "CREATOR"
     ],
-    "requests": [],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q1252904 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q1252904 wdt:P170 ?answer }"
+    ],
     "result": []
   },
   {
@@ -215,8 +229,6 @@
     "uid": 13,
     "question": "Кто автор произведения \"Ученые женщины\"?",
     "entities": [
-      "Q1171840",
-      "Q901",
       "Q467"
     ],
     "type": [
@@ -224,8 +236,8 @@
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q1171840 wdt:P50 ?answer . wd:Q901 wdt:P50 ?answer . wd:Q467 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q1171840 wdt:P170 ?answer . wd:Q901 wdt:P170 ?answer . wd:Q467 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q467 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q467 wdt:P170 ?answer }"
     ],
     "result": []
   },
@@ -303,7 +315,7 @@
     "uid": 18,
     "question": "Какой художник был подвергнут критике французского высшего общества за скандальный \"Портрет мадам Икс\"?",
     "entities": [
-      "Q2006869"
+      "Q2664039"
     ],
     "type": [
       "UNKNOWN"
@@ -351,13 +363,19 @@
     "uid": 21,
     "question": "Кому принадлежат слова: \"Я мыслю, следовательно существую\"?",
     "entities": [
-      "Q8171"
+      "Q192325"
     ],
     "type": [
-      "UNKNOWN"
+      "AUTHOR",
+      "CREATOR"
     ],
-    "requests": [],
-    "result": []
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q192325 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q192325 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q9191"
+    ]
   },
   {
     "uid": 22,
@@ -379,18 +397,19 @@
     "uid": 23,
     "question": "Кто написал роман \"На маяк\"?",
     "entities": [
-      "Q8261",
-      "Q39715"
+      "Q478016"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q8261 wdt:P50 ?answer . wd:Q39715 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q8261 wdt:P170 ?answer . wd:Q39715 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q478016 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q478016 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q40909"
+    ]
   },
   {
     "uid": 24,
@@ -412,30 +431,37 @@
     "uid": 25,
     "question": "Кому принадлежат слова \"И ты, Брут\"?",
     "entities": [
-      "Q172248"
-    ],
-    "type": [
-      "UNKNOWN"
-    ],
-    "requests": [],
-    "result": []
-  },
-  {
-    "uid": 26,
-    "question": "Кто написал картину «Черный квадрат»?",
-    "entities": [
-      "Q164",
-      "Q3305213"
+      "Q617371"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q164 wdt:P50 ?answer . wd:Q3305213 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q164 wdt:P170 ?answer . wd:Q3305213 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q617371 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q617371 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q1048"
+    ]
+  },
+  {
+    "uid": 26,
+    "question": "Кто написал картину «Черный квадрат»?",
+    "entities": [
+      "Q1170315"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q1170315 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q1170315 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q130777"
+    ]
   },
   {
     "uid": 27,
@@ -479,16 +505,16 @@
     "uid": 29,
     "question": "Кто автор исторического романа 'Княжна Тараканова'?",
     "entities": [
-      "Q8261",
-      "Q467349"
+      "Q467349",
+      "Q8261"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q8261 wdt:P50 ?answer . wd:Q467349 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q8261 wdt:P170 ?answer . wd:Q467349 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q467349 wdt:P50 ?answer . wd:Q8261 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q467349 wdt:P170 ?answer . wd:Q8261 wdt:P170 ?answer }"
     ],
     "result": []
   },
@@ -530,18 +556,18 @@
     "uid": 32,
     "question": "В каком городе проводился фестиваль \"Рок над Волгой\"?",
     "entities": [
-      "Q626"
+      "Q4396828"
     ],
     "type": [
       "LOCATION",
       "COUNTRY"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q626 wdt:P276 ?answer }",
-      "SELECT ?answer WHERE { wd:Q626 wdt:P17 ?answer }"
+      "SELECT ?answer WHERE { wd:Q4396828 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q4396828 wdt:P17 ?answer }"
     ],
     "result": [
-      "Q159"
+      "Q894"
     ]
   },
   {
@@ -566,16 +592,15 @@
     "uid": 34,
     "question": "В каком городе России установлен памятник «Белому Биму», сеттеру, герою книги Гавриила Троепольского «Белый Бим – черное ухо»?",
     "entities": [
-      "Q15767",
-      "Q4083062"
+      "Q1635046"
     ],
     "type": [
       "LOCATION",
       "COUNTRY"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q15767 wdt:P276 ?answer . wd:Q4083062 wdt:P276 ?answer }",
-      "SELECT ?answer WHERE { wd:Q15767 wdt:P17 ?answer . wd:Q4083062 wdt:P17 ?answer }"
+      "SELECT ?answer WHERE { wd:Q1635046 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q1635046 wdt:P17 ?answer }"
     ],
     "result": []
   },
@@ -601,17 +626,17 @@
     "uid": 36,
     "question": "Где располагалась резиденция рыцарей Круглого стола?",
     "entities": [
-      "Q102083",
       "Q14748",
-      "Q1611074"
+      "Q1611074",
+      "Q102083"
     ],
     "type": [
       "LOCATION",
       "COUNTRY"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q102083 wdt:P276 ?answer . wd:Q14748 wdt:P276 ?answer . wd:Q1611074 wdt:P276 ?answer }",
-      "SELECT ?answer WHERE { wd:Q102083 wdt:P17 ?answer . wd:Q14748 wdt:P17 ?answer . wd:Q1611074 wdt:P17 ?answer }"
+      "SELECT ?answer WHERE { wd:Q14748 wdt:P276 ?answer . wd:Q1611074 wdt:P276 ?answer . wd:Q102083 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q14748 wdt:P17 ?answer . wd:Q1611074 wdt:P17 ?answer . wd:Q102083 wdt:P17 ?answer }"
     ],
     "result": []
   },
@@ -657,10 +682,16 @@
       "Q183529"
     ],
     "type": [
-      "UNKNOWN"
+      "LOCATION",
+      "COUNTRY"
     ],
-    "requests": [],
-    "result": []
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q183529 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q183529 wdt:P17 ?answer }"
+    ],
+    "result": [
+      "Q212"
+    ]
   },
   {
     "uid": 40,
@@ -687,10 +718,17 @@
       "Q192666"
     ],
     "type": [
-      "UNKNOWN"
+      "COUNTRY",
+      "LOCATION"
     ],
-    "requests": [],
-    "result": []
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q192666 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q192666 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q36",
+      "Q184"
+    ]
   },
   {
     "uid": 42,
@@ -715,42 +753,48 @@
       "Q28435094"
     ],
     "type": [
-      "UNKNOWN"
+      "LOCATION",
+      "COUNTRY"
     ],
-    "requests": [],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q28435094 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q28435094 wdt:P17 ?answer }"
+    ],
     "result": []
   },
   {
     "uid": 44,
     "question": "Какой художник является автором картин «Желтый Христос» и «Зелёный Христос»?",
     "entities": [
-      "Q302"
+      "Q500951"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q302 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q302 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q500951 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q500951 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q37693"
+    ]
   },
   {
     "uid": 45,
     "question": "Какой писатель-фантаст придумал три закона робототехники?",
     "entities": [
-      "Q5967378",
       "Q170978",
-      "Q9386078"
+      "Q9386078",
+      "Q5967378"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q5967378 wdt:P50 ?answer . wd:Q170978 wdt:P50 ?answer . wd:Q9386078 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q5967378 wdt:P170 ?answer . wd:Q170978 wdt:P170 ?answer . wd:Q9386078 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q170978 wdt:P50 ?answer . wd:Q9386078 wdt:P50 ?answer . wd:Q5967378 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q170978 wdt:P170 ?answer . wd:Q9386078 wdt:P170 ?answer . wd:Q5967378 wdt:P170 ?answer }"
     ],
     "result": []
   },
@@ -761,12 +805,12 @@
       "Q49236"
     ],
     "type": [
-      "LOCATION",
-      "COUNTRY"
+      "COUNTRY",
+      "LOCATION"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q49236 wdt:P276 ?answer }",
-      "SELECT ?answer WHERE { wd:Q49236 wdt:P17 ?answer }"
+      "SELECT ?answer WHERE { wd:Q49236 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q49236 wdt:P276 ?answer }"
     ],
     "result": [
       "Q30"
@@ -794,13 +838,17 @@
     "question": "Кто подбросил яблоко раздора Гере, Афине и Афродите?",
     "entities": [
       "Q35500",
-      "Q38012",
-      "Q37122"
+      "Q37122",
+      "Q38012"
     ],
     "type": [
-      "UNKNOWN"
+      "AUTHOR",
+      "CREATOR"
     ],
-    "requests": [],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q35500 wdt:P50 ?answer . wd:Q37122 wdt:P50 ?answer . wd:Q38012 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q35500 wdt:P170 ?answer . wd:Q37122 wdt:P170 ?answer . wd:Q38012 wdt:P170 ?answer }"
+    ],
     "result": []
   },
   {
@@ -825,28 +873,32 @@
     "uid": 50,
     "question": "Кто автор картины «Смерть Ивана Грозного»?",
     "entities": [
-      "Q21104340"
+      "Q28226547"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q21104340 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q21104340 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q28226547 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q28226547 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q460337"
+    ]
   },
   {
     "uid": 51,
     "question": "Кто из рок-музыкантов выступал под псевдонимом \"Зигги - звезная пыль\"?",
-    "entities": [
-      "Q44273"
-    ],
+    "entities": [],
     "type": [
-      "UNKNOWN"
+      "AUTHOR",
+      "CREATOR"
     ],
-    "requests": [],
+    "requests": [
+      "SELECT ?answer WHERE {  }",
+      "SELECT ?answer WHERE {  }"
+    ],
     "result": []
   },
   {
@@ -871,16 +923,15 @@
     "uid": 53,
     "question": "Кто написал сказку \"Спящая царевна\"?",
     "entities": [
-      "Q699",
-      "Q1212806"
+      "Q56308269"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q699 wdt:P50 ?answer . wd:Q1212806 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q699 wdt:P170 ?answer . wd:Q1212806 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q56308269 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q56308269 wdt:P170 ?answer }"
     ],
     "result": []
   },
@@ -891,10 +942,16 @@
       "Q45833"
     ],
     "type": [
-      "UNKNOWN"
+      "CAPITAL",
+      "LOCATION"
     ],
-    "requests": [],
-    "result": []
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q45833 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q45833 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q69060"
+    ]
   },
   {
     "uid": 55,
@@ -936,18 +993,19 @@
     "uid": 57,
     "question": "Кто написал поэму \"Потерянный рай\"?",
     "entities": [
-      "Q3363340",
-      "Q474090"
+      "Q28754"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q3363340 wdt:P50 ?answer . wd:Q474090 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q3363340 wdt:P170 ?answer . wd:Q474090 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q28754 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q28754 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q79759"
+    ]
   },
   {
     "uid": 58,
@@ -970,19 +1028,24 @@
     "uid": 59,
     "question": "Кто сказал \"И ты, Брут\"?",
     "entities": [
-      "Q172248"
+      "Q617371"
     ],
     "type": [
-      "UNKNOWN"
+      "AUTHOR",
+      "CREATOR"
     ],
-    "requests": [],
-    "result": []
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q617371 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q617371 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q1048"
+    ]
   },
   {
     "uid": 60,
     "question": "Кто из героев «Сильмариллиона» создал Сильмариллы?",
     "entities": [
-      "Q1234666",
       "Q79762"
     ],
     "type": [
@@ -990,24 +1053,26 @@
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q1234666 wdt:P50 ?answer . wd:Q79762 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q1234666 wdt:P170 ?answer . wd:Q79762 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q79762 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q79762 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q892"
+    ]
   },
   {
     "uid": 61,
     "question": "Кто написал повесть-сказку \"Приключения Пиноккио\"?",
     "entities": [
-      "Q6502703"
+      "Q8065468"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q6502703 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q6502703 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q8065468 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q8065468 wdt:P170 ?answer }"
     ],
     "result": [
       "Q199588"
@@ -1017,8 +1082,6 @@
     "uid": 62,
     "question": "Кто автор романа \"Колыбель для кошки\"?",
     "entities": [
-      "Q8261",
-      "Q146",
       "Q41359"
     ],
     "type": [
@@ -1026,10 +1089,12 @@
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q8261 wdt:P50 ?answer . wd:Q146 wdt:P50 ?answer . wd:Q41359 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q8261 wdt:P170 ?answer . wd:Q146 wdt:P170 ?answer . wd:Q41359 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q41359 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q41359 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q49074"
+    ]
   },
   {
     "uid": 63,
@@ -1053,17 +1118,19 @@
     "uid": 64,
     "question": "Кто написал картину \"Видение отроку Варфоломею\"?",
     "entities": [
-      "Q44501"
+      "Q4110588"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q44501 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q44501 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q4110588 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q4110588 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q318427"
+    ]
   },
   {
     "uid": 65,
@@ -1072,28 +1139,34 @@
       "Q43244"
     ],
     "type": [
-      "UNKNOWN"
+      "LOCATION",
+      "COUNTRY"
     ],
-    "requests": [],
-    "result": []
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q43244 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q43244 wdt:P17 ?answer }"
+    ],
+    "result": [
+      "Q2696558"
+    ]
   },
   {
     "uid": 66,
     "question": "Кто написал картину «Девочка с персиками»?",
     "entities": [
-      "Q13189",
-      "Q3305213",
-      "Q3031"
+      "Q4156438"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q13189 wdt:P50 ?answer . wd:Q3305213 wdt:P50 ?answer . wd:Q3031 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q13189 wdt:P170 ?answer . wd:Q3305213 wdt:P170 ?answer . wd:Q3031 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q4156438 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q4156438 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q217128"
+    ]
   },
   {
     "uid": 67,
@@ -1136,26 +1209,34 @@
       "Q2369564"
     ],
     "type": [
-      "UNKNOWN"
+      "LOCATION",
+      "COUNTRY"
     ],
-    "requests": [],
-    "result": []
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q2369564 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q2369564 wdt:P17 ?answer }"
+    ],
+    "result": [
+      "Q2133873"
+    ]
   },
   {
     "uid": 70,
-    "question": "Кто создал сайт в Контакте?",
+    "question": "Кто создал сайт ВКонтакте?",
     "entities": [
-      "Q64831533"
+      "Q116933"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q64831533 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q64831533 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q116933 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q116933 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q149067"
+    ]
   },
   {
     "uid": 71,
@@ -1197,7 +1278,6 @@
     "uid": 73,
     "question": "Кто написал картину «Джоконда» («Мона Лиза»)?",
     "entities": [
-      "Q16671243",
       "Q12418"
     ],
     "type": [
@@ -1205,10 +1285,12 @@
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q16671243 wdt:P50 ?answer . wd:Q12418 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q16671243 wdt:P170 ?answer . wd:Q12418 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q12418 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q12418 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q762"
+    ]
   },
   {
     "uid": 74,
@@ -1232,17 +1314,19 @@
     "uid": 75,
     "question": "Кто написал картину «Последний день Помпеи»?",
     "entities": [
-      "Q125414"
+      "Q2521909"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q125414 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q125414 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q2521909 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q2521909 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q4768"
+    ]
   },
   {
     "uid": 76,
@@ -1267,17 +1351,15 @@
     "uid": 77,
     "question": "Кто написал роман \"Призрак оперы\"?",
     "entities": [
-      "Q45529",
-      "Q8261",
-      "Q1344"
+      "Q8773753"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q45529 wdt:P50 ?answer . wd:Q8261 wdt:P50 ?answer . wd:Q1344 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q45529 wdt:P170 ?answer . wd:Q8261 wdt:P170 ?answer . wd:Q1344 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q8773753 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q8773753 wdt:P170 ?answer }"
     ],
     "result": []
   },
@@ -1301,19 +1383,17 @@
     "uid": 79,
     "question": "Какой город является столицей Нигерии?",
     "entities": [
-      "Q1033"
+      "Q3787"
     ],
     "type": [
       "CAPITAL",
       "LOCATION"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q1033 wdt:P36 ?answer }",
-      "SELECT ?answer WHERE { wd:Q1033 wdt:P276 ?answer }"
+      "SELECT ?answer WHERE { wd:Q3787 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q3787 wdt:P276 ?answer }"
     ],
-    "result": [
-      "Q3787"
-    ]
+    "result": []
   },
   {
     "uid": 80,
@@ -1337,16 +1417,16 @@
     "uid": 81,
     "question": "Кто автор памятника И.А. Крылову в Летнем саду Санкт-Петербурга?",
     "entities": [
-      "Q656",
-      "Q4343206"
+      "Q31628",
+      "Q656"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q656 wdt:P50 ?answer . wd:Q4343206 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q656 wdt:P170 ?answer . wd:Q4343206 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q31628 wdt:P50 ?answer . wd:Q656 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q31628 wdt:P170 ?answer . wd:Q656 wdt:P170 ?answer }"
     ],
     "result": []
   },
@@ -1354,19 +1434,17 @@
     "uid": 82,
     "question": "Какой художник является автором картины «Воины Апокалипсиса»?",
     "entities": [
-      "Q42040"
+      "Q58155"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q42040 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q42040 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q58155 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q58155 wdt:P170 ?answer }"
     ],
-    "result": [
-      "Q2733634"
-    ]
+    "result": []
   },
   {
     "uid": 83,
@@ -1375,10 +1453,16 @@
       "Q152854"
     ],
     "type": [
-      "UNKNOWN"
+      "LOCATION",
+      "COUNTRY"
     ],
-    "requests": [],
-    "result": []
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q152854 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q152854 wdt:P17 ?answer }"
+    ],
+    "result": [
+      "Q36124"
+    ]
   },
   {
     "uid": 84,
@@ -1421,17 +1505,19 @@
     "uid": 86,
     "question": "Кто написал роман «Хижина дяди Тома»?",
     "entities": [
-      "Q223944"
+      "Q2222"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q223944 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q223944 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q2222 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q2222 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q102513"
+    ]
   },
   {
     "uid": 87,
@@ -1455,16 +1541,16 @@
     "uid": 88,
     "question": "В какой стране воевали между собой в 15 веке Алая и Белая Розы?",
     "entities": [
-      "Q127751",
-      "Q2268159"
+      "Q2268159",
+      "Q127751"
     ],
     "type": [
       "COUNTRY",
       "LOCATION"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q127751 wdt:P17 ?answer . wd:Q2268159 wdt:P17 ?answer }",
-      "SELECT ?answer WHERE { wd:Q127751 wdt:P276 ?answer . wd:Q2268159 wdt:P276 ?answer }"
+      "SELECT ?answer WHERE { wd:Q2268159 wdt:P17 ?answer . wd:Q127751 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q2268159 wdt:P276 ?answer . wd:Q127751 wdt:P276 ?answer }"
     ],
     "result": []
   },
@@ -1475,9 +1561,9 @@
       "Q577",
       "Q483110",
       "Q1079023",
-      "Q578668",
+      "Q2736",
       "Q1366722",
-      "Q2736"
+      "Q578668"
     ],
     "type": [
       "UNKNOWN"
@@ -1645,18 +1731,18 @@
     "uid": 99,
     "question": "Кто написал поэму \"Ода к радости\"?",
     "entities": [
-      "Q726543",
-      "Q935526",
-      "Q474090"
+      "Q41545"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q726543 wdt:P50 ?answer . wd:Q935526 wdt:P50 ?answer . wd:Q474090 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q726543 wdt:P170 ?answer . wd:Q935526 wdt:P170 ?answer . wd:Q474090 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q41545 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q41545 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q22670"
+    ]
   }
 ]

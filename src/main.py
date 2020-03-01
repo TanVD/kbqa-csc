@@ -1,4 +1,5 @@
 import json
+from time import sleep
 
 from src.api import search_wikipedia
 from src.entity_extraction import extract_entity
@@ -16,6 +17,8 @@ def main():
     correct = 0
 
     for data in questions[:100]:
+        sleep(2)
+
         question = data["question"]
         print(question)
 
@@ -24,7 +27,7 @@ def main():
 
         ner_res = ner(question)
         synt_res = syntactic(ner_res)
-        entities = extract_entity(ner_res, synt_res)
+        entities = extract_entity(question, ner_res, synt_res)
 
         ids = set()
         for entity in entities:

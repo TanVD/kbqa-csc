@@ -21,13 +21,15 @@ class QueryType(Enum):
 def get_types_of(synt_res):
     lemmas = {synt_word["lemma"] for synt_word in synt_res}
 
-    if is_one_of(lemmas, [{"столица"}, {"какой", "город", "центр"}]):
+    if is_one_of(lemmas, [{"столица"}, {"какой", "город", "центр"}, {"как", "называться", "центр"}]):
         return [QueryType.CAPITAL, QueryType.LOCATION]
-    elif is_one_of(lemmas, [{"в", "какой", "страна"}, {"какой", "страна"}]):
+    elif is_one_of(lemmas, [{"в", "какой", "страна"}, {"какой", "страна"}, {"какой", "государство"}]):
         return [QueryType.COUNTRY, QueryType.LOCATION]
     elif is_one_of(lemmas, [{"в", "какой", "город"}, {"какой", "город"}]):
         return [QueryType.LOCATION, QueryType.COUNTRY]
-    elif is_one_of(lemmas, [{"где"}, {"какой", "принадлежит"}, {"в", "какой"}]):
+    elif is_one_of(lemmas, [{"где"}, {"какой", "принадлежать"}, {"в", "какой"}]):
+        return [QueryType.LOCATION, QueryType.COUNTRY]
+    elif is_one_of(lemmas, [{"какой", "пролив"}, {"какой", "река"}, {"какой", "остров"}, {"какой", "озеро"}]):
         return [QueryType.LOCATION, QueryType.COUNTRY]
 
     elif is_one_of(lemmas, [{"создатель"}, {"автор"}, {"кто"}, {"какой", "придумать"}]):
@@ -50,12 +52,16 @@ def generate_requests(query_types, entities):
 
 def get_request(request):
     if not request:
-        return ""
+        return []
 
-    response = return_sparql_query_results(request)
-    results = response["results"]
-    values = [result["answer"]["value"] for result in results.get("bindings", {})]
-    return [re.findall("Q\\d+", value)[0] for value in values]
+    try:
+        response = return_sparql_query_results(request)
+        results = response["results"]
+        values = [result["answer"]["value"] for result in results.get("bindings", {})]
+        return [re.findall("Q\\d+", value)[0] for value in values]
+    except:
+        print("Failed request")
+        return []
 
 
 def is_one_of(lemmas, sets):
