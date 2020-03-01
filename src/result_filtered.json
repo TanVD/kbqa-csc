@@ -1,0 +1,596 @@
+[
+  {
+    "uid": 0,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q25173 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 1,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q71910 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 2,
+    "query": []
+  },
+  {
+    "uid": 3,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q23438 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 4,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q620269 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 5,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q1384 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 6,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q34589 wdt:P17 ?answer . wd:Q19939 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 7,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q1439 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 8,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q12418 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 9,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q1252904 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 10,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q6886 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 11,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q2748789 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 12,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q4064914 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 13,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q467 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 14,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q321470 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 15,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q181912 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 16,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q9141 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 17,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q18871 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 18,
+    "query": []
+  },
+  {
+    "uid": 19,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q2316684 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 20,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q61944 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 21,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q192325 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 22,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q1764 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 23,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q39715 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 24,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q5284 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 25,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q617371 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 26,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q1170315 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 27,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q201028 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 28,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q390418 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 29,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q467349 wdt:P50 ?answer . wd:Q8261 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 30,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q39 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 31,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q4096274 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 32,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q4396828 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 33,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q160440 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 34,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q1635046 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 35,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q6809 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 36,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q14748 wdt:P276 ?answer . wd:Q102083 wdt:P276 ?answer . wd:Q1611074 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 37,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q5466 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 38,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q48956510 wdt:P276 ?answer . wd:Q11410 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 39,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q183529 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 40,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q755221 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 41,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q192666 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 42,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q4096274 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 43,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q28435094 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 44,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q500951 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 45,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q9386078 wdt:P50 ?answer . wd:Q170978 wdt:P50 ?answer . wd:Q5967378 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 46,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q49236 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 47,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q577 wdt:P17 ?answer . wd:Q10931 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 48,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q38012 wdt:P50 ?answer . wd:Q37122 wdt:P50 ?answer . wd:Q35500 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 49,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q42000 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 50,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q28226547 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 51,
+    "query": [
+      "SELECT ?answer WHERE {  }"
+    ]
+  },
+  {
+    "uid": 52,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q214371 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 53,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q56308269 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 54,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q45833 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 55,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q51252 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 56,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q30188 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 57,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q28754 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 58,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q1011039 wdt:P17 ?answer . wd:Q4427853 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 59,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q617371 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 60,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q79762 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 61,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q8065468 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 62,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q41359 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 63,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q1348 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 64,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q4110588 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 65,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q43244 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 66,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q4156438 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 67,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q16513600 wdt:P17 ?answer . wd:Q16398 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 68,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q44539 wdt:P276 ?answer . wd:Q39503 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 69,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q2369564 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 70,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q116933 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 71,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q865 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 72,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q673942 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 73,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q12418 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 74,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q60220 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 75,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q2521909 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 76,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q1050 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 77,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q8773753 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 78,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q41250183 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 79,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q3787 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 80,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q2801 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 81,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q31628 wdt:P50 ?answer . wd:Q656 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 82,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q58155 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 83,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q152854 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 84,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q513 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 85,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q181157 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 86,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q2222 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 87,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q26 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 88,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q2268159 wdt:P17 ?answer . wd:Q127751 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 89,
+    "query": []
+  },
+  {
+    "uid": 90,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q33506 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 91,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q208372 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 92,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q330988 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 93,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q1861 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 94,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q130321 wdt:P276 ?answer }"
+    ]
+  },
+  {
+    "uid": 95,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q12542 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 96,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q4435756 wdt:P50 ?answer }"
+    ]
+  },
+  {
+    "uid": 97,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q797 wdt:P36 ?answer }"
+    ]
+  },
+  {
+    "uid": 98,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q498871 wdt:P17 ?answer }"
+    ]
+  },
+  {
+    "uid": 99,
+    "query": [
+      "SELECT ?answer WHERE { wd:Q41545 wdt:P50 ?answer }"
+    ]
+  }
+]

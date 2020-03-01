@@ -12,6 +12,7 @@ questions = json.loads(open("data.json", "r").read())
 
 def main():
     results = []
+    filtered_results = []
 
     got = 0
     correct = 0
@@ -63,10 +64,16 @@ def main():
             "result": res
         })
 
+        filtered_results.append({
+            "uid": uid,
+            "query": requests[:1]
+        })
+
     print(f'TOTAL FOUND {got}')
     print(f'TOTAL CORRECT {correct}')
 
     print(json.dumps(results, ensure_ascii=False))
+    print(json.dumps(filtered_results, ensure_ascii=False))
 
 
 if __name__ == "__main__":
