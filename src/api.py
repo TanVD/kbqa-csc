@@ -7,13 +7,13 @@ from googlesearch import search
 def get_wikidata_ids(title):
     url = f"https://ru.wikipedia.org/w/api.php?action=query&prop=pageprops&titles={title}&format=json"
     res = str(requests.get(url).content)
-    obj = re.findall("Q\\d+", res)
+    obj = re.findall("\"Q\\d+\"", res)
 
     if len(obj) != 1:
         print("GOT STRANGE RESULT" + str(res))
         return "NOT FOUND"
 
-    return obj[0]
+    return obj[0].strip("\"")
 
 
 def search_wikipedia(query):
