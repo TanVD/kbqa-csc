@@ -1,17 +1,20 @@
+import re
 from enum import Enum
+
+from qwikidata.sparql import return_sparql_query_results
 
 
 class QueryType(Enum):
     # P276
-    LOCATION = 1
+    LOCATION = 276
     # P36
-    CAPITAL = 2
+    CAPITAL = 36
     # P50
-    AUTHOR = 3
+    AUTHOR = 50
     # P17
-    COUNTRY = 4
+    COUNTRY = 17
     # P170
-    CREATOR = 5
+    CREATOR = 170
     UNKNOWN = 6
 
 
@@ -29,6 +32,24 @@ def get_type_of(synt_res):
         return QueryType.AUTHOR
 
     return QueryType.UNKNOWN
+
+
+def generate_request(query_type, entities):
+    if query_type == QueryType.UNKNOWN:
+        return ""
+
+    where = " . ".join([f"wd:{entity} wdt:P{query_type.value} ?answer" for entity in entities])
+    return f'SELECT ?answer WHERE {"{ " + where + " }"}'
+
+
+def get_request(request):
+    if not request:
+        return ""
+
+    response = return_sparql_query_results(request)
+    results = response["results"]
+    values = [result["answer"]["value"] for result in results.get("bindings", {})]
+    return [re.findall("Q\\d+", value)[0] for value in values]
 
 
 def is_one_of(lemmas, sets):

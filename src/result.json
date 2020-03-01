@@ -5,7 +5,9 @@
     "entities": [
       "Q25173"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 1,
@@ -13,18 +15,24 @@
     "entities": [
       "Q71910"
     ],
-    "type": "CREATOR"
+    "type": "CREATOR",
+    "request": "SELECT ?answer WHERE { wd:Q71910 wdt:P170 ?answer }",
+    "result": [
+      "Q92600"
+    ]
   },
   {
     "uid": 2,
     "question": "Какой художник заставил запорожцев написать письмо турецкому султану?",
     "entities": [
-      "Q133492",
-      "Q43292",
       "Q744996",
-      "Q1028181"
+      "Q1028181",
+      "Q133492",
+      "Q43292"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 3,
@@ -32,7 +40,9 @@
     "entities": [
       "Q23438"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q23438 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 4,
@@ -40,7 +50,9 @@
     "entities": [
       "Q620269"
     ],
-    "type": "LOCATION"
+    "type": "LOCATION",
+    "request": "SELECT ?answer WHERE { wd:Q620269 wdt:P276 ?answer }",
+    "result": []
   },
   {
     "uid": 5,
@@ -48,7 +60,11 @@
     "entities": [
       "Q1384"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q1384 wdt:P36 ?answer }",
+    "result": [
+      "Q24861"
+    ]
   },
   {
     "uid": 6,
@@ -57,7 +73,9 @@
       "Q19939",
       "Q34589"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q19939 wdt:P17 ?answer . wd:Q34589 wdt:P17 ?answer }",
+    "result": []
   },
   {
     "uid": 7,
@@ -65,7 +83,11 @@
     "entities": [
       "Q1439"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q1439 wdt:P36 ?answer }",
+    "result": [
+      "Q16559"
+    ]
   },
   {
     "uid": 8,
@@ -73,7 +95,9 @@
     "entities": [
       "Q12418"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 9,
@@ -83,7 +107,9 @@
       "Q394206",
       "Q1252904"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 10,
@@ -91,7 +117,11 @@
     "entities": [
       "Q6886"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q6886 wdt:P36 ?answer }",
+    "result": [
+      "Q6934"
+    ]
   },
   {
     "uid": 11,
@@ -99,7 +129,11 @@
     "entities": [
       "Q2748789"
     ],
-    "type": "LOCATION"
+    "type": "LOCATION",
+    "request": "SELECT ?answer WHERE { wd:Q2748789 wdt:P276 ?answer }",
+    "result": [
+      "Q133274"
+    ]
   },
   {
     "uid": 12,
@@ -107,18 +141,22 @@
     "entities": [
       "Q4064914"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q4064914 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 13,
     "question": "Кто автор произведения \"Ученые женщины\"?",
     "entities": [
-      "Q1171840",
       "Q901",
-      "Q467",
-      "Q482980"
+      "Q482980",
+      "Q1171840",
+      "Q467"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q901 wdt:P50 ?answer . wd:Q482980 wdt:P50 ?answer . wd:Q1171840 wdt:P50 ?answer . wd:Q467 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 14,
@@ -126,7 +164,11 @@
     "entities": [
       "Q30"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q30 wdt:P36 ?answer }",
+    "result": [
+      "Q61"
+    ]
   },
   {
     "uid": 15,
@@ -134,7 +176,11 @@
     "entities": [
       "Q181912"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q181912 wdt:P17 ?answer }",
+    "result": [
+      "Q55"
+    ]
   },
   {
     "uid": 16,
@@ -142,7 +188,9 @@
     "entities": [
       "Q9141"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q9141 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 17,
@@ -150,7 +198,11 @@
     "entities": [
       "Q18871"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q18871 wdt:P17 ?answer }",
+    "result": [
+      "Q43"
+    ]
   },
   {
     "uid": 18,
@@ -158,7 +210,9 @@
     "entities": [
       "Q2006869"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 19,
@@ -166,7 +220,11 @@
     "entities": [
       "Q2316684"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q2316684 wdt:P50 ?answer }",
+    "result": [
+      "Q35610"
+    ]
   },
   {
     "uid": 20,
@@ -174,7 +232,9 @@
     "entities": [
       "Q61944"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q61944 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 21,
@@ -182,7 +242,9 @@
     "entities": [
       "Q8171"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 22,
@@ -190,16 +252,20 @@
     "entities": [
       "Q1764"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q1764 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 23,
     "question": "Кто написал роман \"На маяк\"?",
     "entities": [
-      "Q39715",
-      "Q8261"
+      "Q8261",
+      "Q39715"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q8261 wdt:P50 ?answer . wd:Q39715 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 24,
@@ -207,7 +273,9 @@
     "entities": [
       "Q5284"
     ],
-    "type": "CREATOR"
+    "type": "CREATOR",
+    "request": "SELECT ?answer WHERE { wd:Q5284 wdt:P170 ?answer }",
+    "result": []
   },
   {
     "uid": 25,
@@ -215,7 +283,9 @@
     "entities": [
       "Q172248"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 26,
@@ -224,16 +294,20 @@
       "Q3305213",
       "Q164"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q3305213 wdt:P50 ?answer . wd:Q164 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 27,
     "question": "В какой стране живут кхмеры?",
     "entities": [
-      "Q6256",
-      "Q201028"
+      "Q201028",
+      "Q6256"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q201028 wdt:P17 ?answer . wd:Q6256 wdt:P17 ?answer }",
+    "result": []
   },
   {
     "uid": 28,
@@ -241,17 +315,23 @@
     "entities": [
       "Q390418"
     ],
-    "type": "LOCATION"
+    "type": "LOCATION",
+    "request": "SELECT ?answer WHERE { wd:Q390418 wdt:P276 ?answer }",
+    "result": [
+      "Q90"
+    ]
   },
   {
     "uid": 29,
     "question": "Кто автор исторического романа 'Княжна Тараканова'?",
     "entities": [
-      "Q467349",
       "Q482980",
-      "Q8261"
+      "Q8261",
+      "Q467349"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q482980 wdt:P50 ?answer . wd:Q8261 wdt:P50 ?answer . wd:Q467349 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 30,
@@ -259,7 +339,11 @@
     "entities": [
       "Q39"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q39 wdt:P36 ?answer }",
+    "result": [
+      "Q70"
+    ]
   },
   {
     "uid": 31,
@@ -267,7 +351,9 @@
     "entities": [
       "Q4096274"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q4096274 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 32,
@@ -275,7 +361,9 @@
     "entities": [
       "Q626"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q626 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 33,
@@ -283,16 +371,22 @@
     "entities": [
       "Q160440"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q160440 wdt:P36 ?answer }",
+    "result": [
+      "Q158604"
+    ]
   },
   {
     "uid": 34,
     "question": "В каком городе России установлен памятник «Белому Биму», сеттеру, герою книги Гавриила Троепольского «Белый Бим – черное ухо»?",
     "entities": [
-      "Q4083062",
-      "Q15767"
+      "Q15767",
+      "Q4083062"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q15767 wdt:P36 ?answer . wd:Q4083062 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 35,
@@ -300,17 +394,23 @@
     "entities": [
       "Q6809"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q6809 wdt:P36 ?answer }",
+    "result": [
+      "Q6816"
+    ]
   },
   {
     "uid": 36,
     "question": "Где располагалась резиденция рыцарей Круглого стола?",
     "entities": [
-      "Q1611074",
       "Q102083",
-      "Q14748"
+      "Q14748",
+      "Q1611074"
     ],
-    "type": "LOCATION"
+    "type": "LOCATION",
+    "request": "SELECT ?answer WHERE { wd:Q102083 wdt:P276 ?answer . wd:Q14748 wdt:P276 ?answer . wd:Q1611074 wdt:P276 ?answer }",
+    "result": []
   },
   {
     "uid": 37,
@@ -318,7 +418,11 @@
     "entities": [
       "Q5466"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q5466 wdt:P36 ?answer }",
+    "result": [
+      "Q5470"
+    ]
   },
   {
     "uid": 38,
@@ -327,7 +431,9 @@
       "Q11410",
       "Q48941926"
     ],
-    "type": "LOCATION"
+    "type": "LOCATION",
+    "request": "SELECT ?answer WHERE { wd:Q11410 wdt:P276 ?answer . wd:Q48941926 wdt:P276 ?answer }",
+    "result": []
   },
   {
     "uid": 39,
@@ -335,15 +441,19 @@
     "entities": [
       "Q183529"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 40,
     "question": "Кто создал одно из чудес света – статую Зевса в Афинах?",
     "entities": [
-      "Q755221"
+      "Q4501225"
     ],
-    "type": "CREATOR"
+    "type": "CREATOR",
+    "request": "SELECT ?answer WHERE { wd:Q4501225 wdt:P170 ?answer }",
+    "result": []
   },
   {
     "uid": 41,
@@ -351,7 +461,9 @@
     "entities": [
       "Q192666"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 42,
@@ -359,7 +471,9 @@
     "entities": [
       "Q4096274"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q4096274 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 43,
@@ -367,7 +481,9 @@
     "entities": [
       "Q28435094"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 44,
@@ -375,18 +491,22 @@
     "entities": [
       "Q302"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q302 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 45,
     "question": "Какой писатель-фантаст придумал три закона робототехники?",
     "entities": [
       "Q5967378",
-      "Q9386078",
       "Q36180",
+      "Q9386078",
       "Q170978"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q5967378 wdt:P50 ?answer . wd:Q36180 wdt:P50 ?answer . wd:Q9386078 wdt:P50 ?answer . wd:Q170978 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 46,
@@ -394,27 +514,33 @@
     "entities": [
       "Q49236"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q49236 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 47,
     "question": "В какой латиноамериканской стране в 1979 году победила Сандинистская революция?",
     "entities": [
-      "Q6256",
+      "Q577",
       "Q10931",
-      "Q577"
+      "Q6256"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q577 wdt:P17 ?answer . wd:Q10931 wdt:P17 ?answer . wd:Q6256 wdt:P17 ?answer }",
+    "result": []
   },
   {
     "uid": 48,
     "question": "Кто подбросил яблоко раздора Гере, Афине и Афродите?",
     "entities": [
+      "Q38012",
       "Q37122",
-      "Q35500",
-      "Q38012"
+      "Q35500"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 49,
@@ -422,7 +548,11 @@
     "entities": [
       "Q42000"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q42000 wdt:P17 ?answer }",
+    "result": [
+      "Q142"
+    ]
   },
   {
     "uid": 50,
@@ -430,7 +560,9 @@
     "entities": [
       "Q21104340"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q21104340 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 51,
@@ -438,7 +570,9 @@
     "entities": [
       "Q44273"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 52,
@@ -446,7 +580,11 @@
     "entities": [
       "Q214371"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q214371 wdt:P50 ?answer }",
+    "result": [
+      "Q93354"
+    ]
   },
   {
     "uid": 53,
@@ -455,7 +593,9 @@
       "Q1212806",
       "Q699"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q1212806 wdt:P50 ?answer . wd:Q699 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 54,
@@ -463,7 +603,9 @@
     "entities": [
       "Q45833"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 55,
@@ -471,7 +613,9 @@
     "entities": [
       "Q51252"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q51252 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 56,
@@ -479,7 +623,11 @@
     "entities": [
       "Q30188"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q30188 wdt:P17 ?answer }",
+    "result": [
+      "Q45"
+    ]
   },
   {
     "uid": 57,
@@ -488,7 +636,9 @@
       "Q3363340",
       "Q474090"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q3363340 wdt:P50 ?answer . wd:Q474090 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 58,
@@ -497,7 +647,9 @@
       "Q1011039",
       "Q4427853"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q1011039 wdt:P17 ?answer . wd:Q4427853 wdt:P17 ?answer }",
+    "result": []
   },
   {
     "uid": 59,
@@ -505,7 +657,9 @@
     "entities": [
       "Q172248"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 60,
@@ -514,7 +668,9 @@
       "Q1234666",
       "Q79762"
     ],
-    "type": "CREATOR"
+    "type": "CREATOR",
+    "request": "SELECT ?answer WHERE { wd:Q1234666 wdt:P170 ?answer . wd:Q79762 wdt:P170 ?answer }",
+    "result": []
   },
   {
     "uid": 61,
@@ -522,18 +678,22 @@
     "entities": [
       "Q6502703"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q6502703 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 62,
     "question": "Кто автор романа \"Колыбель для кошки\"?",
     "entities": [
       "Q412770",
-      "Q146",
       "Q482980",
+      "Q146",
       "Q8261"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q412770 wdt:P50 ?answer . wd:Q482980 wdt:P50 ?answer . wd:Q146 wdt:P50 ?answer . wd:Q8261 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 63,
@@ -541,7 +701,9 @@
     "entities": [
       "Q1348"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q1348 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 64,
@@ -549,7 +711,9 @@
     "entities": [
       "Q44501"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q44501 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 65,
@@ -557,7 +721,9 @@
     "entities": [
       "Q43244"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 66,
@@ -567,26 +733,32 @@
       "Q3031",
       "Q13189"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q3305213 wdt:P50 ?answer . wd:Q3031 wdt:P50 ?answer . wd:Q13189 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 67,
     "question": "Какая страна является родиной хереса?",
     "entities": [
-      "Q6256",
       "Q16398",
-      "Q16513600"
+      "Q16513600",
+      "Q6256"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q16398 wdt:P17 ?answer . wd:Q16513600 wdt:P17 ?answer . wd:Q6256 wdt:P17 ?answer }",
+    "result": []
   },
   {
     "uid": 68,
     "question": "В каком городе находился Храм Артемиды, один из Семи чудес античности?",
     "entities": [
-      "Q39503",
-      "Q44539"
+      "Q44539",
+      "Q39503"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q44539 wdt:P36 ?answer . wd:Q39503 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 69,
@@ -594,7 +766,9 @@
     "entities": [
       "Q2369564"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 70,
@@ -602,15 +776,21 @@
     "entities": [
       "Q64831533"
     ],
-    "type": "CREATOR"
+    "type": "CREATOR",
+    "request": "SELECT ?answer WHERE { wd:Q64831533 wdt:P170 ?answer }",
+    "result": []
   },
   {
     "uid": 71,
     "question": "Как называется столица Китайской Народной Республики?",
     "entities": [
-      "Q655407"
+      "Q865"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q865 wdt:P36 ?answer }",
+    "result": [
+      "Q1867"
+    ]
   },
   {
     "uid": 72,
@@ -618,16 +798,20 @@
     "entities": [
       "Q673942"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q673942 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 73,
     "question": "Кто написал картину «Джоконда» («Мона Лиза»)?",
     "entities": [
-      "Q16671243",
-      "Q12418"
+      "Q12418",
+      "Q16671243"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q12418 wdt:P50 ?answer . wd:Q16671243 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 74,
@@ -635,7 +819,11 @@
     "entities": [
       "Q60220"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q60220 wdt:P50 ?answer }",
+    "result": [
+      "Q1398"
+    ]
   },
   {
     "uid": 75,
@@ -643,7 +831,9 @@
     "entities": [
       "Q125414"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q125414 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 76,
@@ -651,25 +841,34 @@
     "entities": [
       "Q1050"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q1050 wdt:P36 ?answer }",
+    "result": [
+      "Q3904",
+      "Q101418"
+    ]
   },
   {
     "uid": 77,
     "question": "Кто написал роман \"Призрак оперы\"?",
     "entities": [
-      "Q45529",
       "Q1344",
-      "Q8261"
+      "Q8261",
+      "Q45529"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q1344 wdt:P50 ?answer . wd:Q8261 wdt:P50 ?answer . wd:Q45529 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 78,
     "question": "В каком подмосковном городе есть Маринкина башня?",
     "entities": [
-      "Q41950252"
+      "Q41250183"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q41250183 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 79,
@@ -677,7 +876,11 @@
     "entities": [
       "Q1033"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q1033 wdt:P36 ?answer }",
+    "result": [
+      "Q3787"
+    ]
   },
   {
     "uid": 80,
@@ -685,16 +888,20 @@
     "entities": [
       "Q2801"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q2801 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 81,
     "question": "Кто автор памятника И.А. Крылову в Летнем саду Санкт-Петербурга?",
     "entities": [
-      "Q656",
-      "Q31628"
+      "Q31628",
+      "Q656"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q31628 wdt:P50 ?answer . wd:Q656 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 82,
@@ -702,7 +909,11 @@
     "entities": [
       "Q42040"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q42040 wdt:P50 ?answer }",
+    "result": [
+      "Q2733634"
+    ]
   },
   {
     "uid": 83,
@@ -710,7 +921,9 @@
     "entities": [
       "Q152854"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 84,
@@ -718,7 +931,12 @@
     "entities": [
       "Q513"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q513 wdt:P17 ?answer }",
+    "result": [
+      "Q148",
+      "Q837"
+    ]
   },
   {
     "uid": 85,
@@ -726,7 +944,11 @@
     "entities": [
       "Q181157"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q181157 wdt:P17 ?answer }",
+    "result": [
+      "Q96"
+    ]
   },
   {
     "uid": 86,
@@ -734,7 +956,9 @@
     "entities": [
       "Q223944"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q223944 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 87,
@@ -742,29 +966,37 @@
     "entities": [
       "Q26"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q26 wdt:P36 ?answer }",
+    "result": [
+      "Q10686"
+    ]
   },
   {
     "uid": 88,
     "question": "В какой стране воевали между собой в 15 веке Алая и Белая Розы?",
     "entities": [
-      "Q2268159",
-      "Q127751"
+      "Q127751",
+      "Q2268159"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q127751 wdt:P17 ?answer . wd:Q2268159 wdt:P17 ?answer }",
+    "result": []
   },
   {
     "uid": 89,
     "question": "Какой стадион принимал финал чемпионата мира по футболу 1966 года?",
     "entities": [
+      "Q2736",
+      "Q577",
       "Q1079023",
       "Q578668",
       "Q483110",
-      "Q1366722",
-      "Q577",
-      "Q2736"
+      "Q1366722"
     ],
-    "type": "UNKNOWN"
+    "type": "UNKNOWN",
+    "request": "",
+    "result": ""
   },
   {
     "uid": 90,
@@ -772,7 +1004,9 @@
     "entities": [
       "Q33506"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q33506 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 91,
@@ -780,7 +1014,11 @@
     "entities": [
       "Q208372"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q208372 wdt:P17 ?answer }",
+    "result": [
+      "Q28"
+    ]
   },
   {
     "uid": 92,
@@ -788,7 +1026,11 @@
     "entities": [
       "Q330988"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q330988 wdt:P36 ?answer }",
+    "result": [
+      "Q1850"
+    ]
   },
   {
     "uid": 93,
@@ -796,7 +1038,9 @@
     "entities": [
       "Q1861"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q1861 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 94,
@@ -804,7 +1048,9 @@
     "entities": [
       "Q130321"
     ],
-    "type": "LOCATION"
+    "type": "LOCATION",
+    "request": "SELECT ?answer WHERE { wd:Q130321 wdt:P276 ?answer }",
+    "result": []
   },
   {
     "uid": 95,
@@ -812,7 +1058,9 @@
     "entities": [
       "Q12542"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q12542 wdt:P36 ?answer }",
+    "result": []
   },
   {
     "uid": 96,
@@ -820,7 +1068,9 @@
     "entities": [
       "Q4435756"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q4435756 wdt:P50 ?answer }",
+    "result": []
   },
   {
     "uid": 97,
@@ -828,7 +1078,11 @@
     "entities": [
       "Q797"
     ],
-    "type": "CAPITAL"
+    "type": "CAPITAL",
+    "request": "SELECT ?answer WHERE { wd:Q797 wdt:P36 ?answer }",
+    "result": [
+      "Q29445"
+    ]
   },
   {
     "uid": 98,
@@ -836,16 +1090,22 @@
     "entities": [
       "Q498871"
     ],
-    "type": "COUNTRY"
+    "type": "COUNTRY",
+    "request": "SELECT ?answer WHERE { wd:Q498871 wdt:P17 ?answer }",
+    "result": [
+      "Q179876"
+    ]
   },
   {
     "uid": 99,
     "question": "Кто написал поэму \"Ода к радости\"?",
     "entities": [
       "Q935526",
-      "Q178985",
-      "Q474090"
+      "Q474090",
+      "Q178985"
     ],
-    "type": "AUTHOR"
+    "type": "AUTHOR",
+    "request": "SELECT ?answer WHERE { wd:Q935526 wdt:P50 ?answer . wd:Q474090 wdt:P50 ?answer . wd:Q178985 wdt:P50 ?answer }",
+    "result": []
   }
 ]
