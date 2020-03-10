@@ -17,7 +17,7 @@ def main():
     got = 0
     correct = 0
 
-    for data in questions[:100]:
+    for data in questions:
         sleep(2)
 
         question = data["question"]

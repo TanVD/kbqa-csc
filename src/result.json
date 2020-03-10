@@ -39,10 +39,10 @@
     "uid": 2,
     "question": "Какой художник заставил запорожцев написать письмо турецкому султану?",
     "entities": [
-      "Q43292",
-      "Q1028181",
+      "Q744996",
       "Q133492",
-      "Q744996"
+      "Q43292",
+      "Q1028181"
     ],
     "type": [
       "UNKNOWN"
@@ -106,16 +106,16 @@
     "uid": 6,
     "question": "В какой стране находятся две великие реки – Тигр и Евфрат?",
     "entities": [
-      "Q34589",
-      "Q19939"
+      "Q19939",
+      "Q34589"
     ],
     "type": [
       "COUNTRY",
       "LOCATION"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q34589 wdt:P17 ?answer . wd:Q19939 wdt:P17 ?answer }",
-      "SELECT ?answer WHERE { wd:Q34589 wdt:P276 ?answer . wd:Q19939 wdt:P276 ?answer }"
+      "SELECT ?answer WHERE { wd:Q19939 wdt:P17 ?answer . wd:Q34589 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q19939 wdt:P276 ?answer . wd:Q34589 wdt:P276 ?answer }"
     ],
     "result": []
   },
@@ -245,17 +245,19 @@
     "uid": 14,
     "question": "Какой город является столицей штата США Кентукки?",
     "entities": [
-      "Q321470"
+      "Q30"
     ],
     "type": [
       "CAPITAL",
       "LOCATION"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q321470 wdt:P36 ?answer }",
-      "SELECT ?answer WHERE { wd:Q321470 wdt:P276 ?answer }"
+      "SELECT ?answer WHERE { wd:Q30 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q30 wdt:P276 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q61"
+    ]
   },
   {
     "uid": 15,
@@ -540,17 +542,19 @@
     "uid": 31,
     "question": "Кто автор сказки \"Бременские музыканты\"?",
     "entities": [
-      "Q4096274"
+      "Q112015"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q4096274 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q4096274 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q112015 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q112015 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q2793"
+    ]
   },
   {
     "uid": 32,
@@ -626,8 +630,8 @@
     "uid": 36,
     "question": "Где располагалась резиденция рыцарей Круглого стола?",
     "entities": [
-      "Q14748",
       "Q1611074",
+      "Q14748",
       "Q102083"
     ],
     "type": [
@@ -635,8 +639,8 @@
       "COUNTRY"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q14748 wdt:P276 ?answer . wd:Q1611074 wdt:P276 ?answer . wd:Q102083 wdt:P276 ?answer }",
-      "SELECT ?answer WHERE { wd:Q14748 wdt:P17 ?answer . wd:Q1611074 wdt:P17 ?answer . wd:Q102083 wdt:P17 ?answer }"
+      "SELECT ?answer WHERE { wd:Q1611074 wdt:P276 ?answer . wd:Q14748 wdt:P276 ?answer . wd:Q102083 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q1611074 wdt:P17 ?answer . wd:Q14748 wdt:P17 ?answer . wd:Q102083 wdt:P17 ?answer }"
     ],
     "result": []
   },
@@ -662,16 +666,16 @@
     "uid": 38,
     "question": "Где будут проходить летние Олимпийские игры в 2016г.",
     "entities": [
-      "Q11410",
-      "Q48956510"
+      "Q65170155",
+      "Q11410"
     ],
     "type": [
       "LOCATION",
       "COUNTRY"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q11410 wdt:P276 ?answer . wd:Q48956510 wdt:P276 ?answer }",
-      "SELECT ?answer WHERE { wd:Q11410 wdt:P17 ?answer . wd:Q48956510 wdt:P17 ?answer }"
+      "SELECT ?answer WHERE { wd:Q65170155 wdt:P276 ?answer . wd:Q11410 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q65170155 wdt:P17 ?answer . wd:Q11410 wdt:P17 ?answer }"
     ],
     "result": []
   },
@@ -784,17 +788,17 @@
     "uid": 45,
     "question": "Какой писатель-фантаст придумал три закона робототехники?",
     "entities": [
-      "Q170978",
+      "Q5967378",
       "Q9386078",
-      "Q5967378"
+      "Q170978"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q170978 wdt:P50 ?answer . wd:Q9386078 wdt:P50 ?answer . wd:Q5967378 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q170978 wdt:P170 ?answer . wd:Q9386078 wdt:P170 ?answer . wd:Q5967378 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q5967378 wdt:P50 ?answer . wd:Q9386078 wdt:P50 ?answer . wd:Q170978 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q5967378 wdt:P170 ?answer . wd:Q9386078 wdt:P170 ?answer . wd:Q170978 wdt:P170 ?answer }"
     ],
     "result": []
   },
@@ -838,16 +842,16 @@
     "question": "Кто подбросил яблоко раздора Гере, Афине и Афродите?",
     "entities": [
       "Q35500",
-      "Q37122",
-      "Q38012"
+      "Q38012",
+      "Q37122"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q35500 wdt:P50 ?answer . wd:Q37122 wdt:P50 ?answer . wd:Q38012 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q35500 wdt:P170 ?answer . wd:Q37122 wdt:P170 ?answer . wd:Q38012 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q35500 wdt:P50 ?answer . wd:Q38012 wdt:P50 ?answer . wd:Q37122 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q35500 wdt:P170 ?answer . wd:Q38012 wdt:P170 ?answer . wd:Q37122 wdt:P170 ?answer }"
     ],
     "result": []
   },
@@ -923,17 +927,19 @@
     "uid": 53,
     "question": "Кто написал сказку \"Спящая царевна\"?",
     "entities": [
-      "Q56308269"
+      "Q19221647"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q56308269 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q56308269 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q19221647 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q19221647 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q157623"
+    ]
   },
   {
     "uid": 54,
@@ -1383,17 +1389,19 @@
     "uid": 79,
     "question": "Какой город является столицей Нигерии?",
     "entities": [
-      "Q3787"
+      "Q1033"
     ],
     "type": [
       "CAPITAL",
       "LOCATION"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q3787 wdt:P36 ?answer }",
-      "SELECT ?answer WHERE { wd:Q3787 wdt:P276 ?answer }"
+      "SELECT ?answer WHERE { wd:Q1033 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q1033 wdt:P276 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q3787"
+    ]
   },
   {
     "uid": 80,
@@ -1417,16 +1425,16 @@
     "uid": 81,
     "question": "Кто автор памятника И.А. Крылову в Летнем саду Санкт-Петербурга?",
     "entities": [
-      "Q31628",
-      "Q656"
+      "Q656",
+      "Q31628"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q31628 wdt:P50 ?answer . wd:Q656 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q31628 wdt:P170 ?answer . wd:Q656 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q656 wdt:P50 ?answer . wd:Q31628 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q656 wdt:P170 ?answer . wd:Q31628 wdt:P170 ?answer }"
     ],
     "result": []
   },
@@ -1558,11 +1566,11 @@
     "uid": 89,
     "question": "Какой стадион принимал финал чемпионата мира по футболу 1966 года?",
     "entities": [
-      "Q577",
-      "Q483110",
-      "Q1079023",
       "Q2736",
+      "Q483110",
+      "Q577",
       "Q1366722",
+      "Q1079023",
       "Q578668"
     ],
     "type": [
@@ -1663,33 +1671,37 @@
     "uid": 95,
     "question": "Как называлась столица государства ацтеков?",
     "entities": [
-      "Q12542"
+      "Q2608489"
     ],
     "type": [
       "CAPITAL",
       "LOCATION"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q12542 wdt:P36 ?answer }",
-      "SELECT ?answer WHERE { wd:Q12542 wdt:P276 ?answer }"
+      "SELECT ?answer WHERE { wd:Q2608489 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q2608489 wdt:P276 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q13695"
+    ]
   },
   {
     "uid": 96,
     "question": "Кто придумал Алису Селезневу?",
     "entities": [
-      "Q4435756"
+      "Q4062421"
     ],
     "type": [
       "AUTHOR",
       "CREATOR"
     ],
     "requests": [
-      "SELECT ?answer WHERE { wd:Q4435756 wdt:P50 ?answer }",
-      "SELECT ?answer WHERE { wd:Q4435756 wdt:P170 ?answer }"
+      "SELECT ?answer WHERE { wd:Q4062421 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q4062421 wdt:P170 ?answer }"
     ],
-    "result": []
+    "result": [
+      "Q360292"
+    ]
   },
   {
     "uid": 97,
@@ -1743,6 +1755,886 @@
     ],
     "result": [
       "Q22670"
+    ]
+  },
+  {
+    "uid": 100,
+    "question": "Какое современное государство занимает территорию, на которой находился древний ассирийский город Ниневия?",
+    "entities": [
+      "Q5680"
+    ],
+    "type": [
+      "COUNTRY",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q5680 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q5680 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q796"
+    ]
+  },
+  {
+    "uid": 101,
+    "question": "Какой город является центром Уральского федерального округа?",
+    "entities": [
+      "Q41964"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q41964 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q41964 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q887"
+    ]
+  },
+  {
+    "uid": 102,
+    "question": "Кто автор книги \"Шевалье де Сент-Эрмин\"?",
+    "entities": [
+      "Q4521904"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q4521904 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q4521904 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q38337"
+    ]
+  },
+  {
+    "uid": 103,
+    "question": "В какой стране находится крупный город Фейсалабад?",
+    "entities": [
+      "Q173985"
+    ],
+    "type": [
+      "COUNTRY",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q173985 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q173985 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q843"
+    ]
+  },
+  {
+    "uid": 104,
+    "question": "Какой город является столицей государства Руанда?",
+    "entities": [
+      "Q1037"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q1037 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q1037 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q3859"
+    ]
+  },
+  {
+    "uid": 105,
+    "question": "В каком государстве находится Океанографический музей Жак-Ива Кусто? \"в ...\"",
+    "entities": [
+      "Q193733"
+    ],
+    "type": [
+      "COUNTRY",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q193733 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q193733 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q159"
+    ]
+  },
+  {
+    "uid": 106,
+    "question": "Кто автор \"Похождений бравого солдата Швейка\"?",
+    "entities": [
+      "Q208622"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q208622 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q208622 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q2754"
+    ]
+  },
+  {
+    "uid": 107,
+    "question": "Кто автор строк: \"Белеет парус одинокий...\"?",
+    "entities": [
+      "Q4081781"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q4081781 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q4081781 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q333873"
+    ]
+  },
+  {
+    "uid": 108,
+    "question": "В каком городе установлен памятник Фаине Раневской?",
+    "entities": [
+      "Q470466"
+    ],
+    "type": [
+      "LOCATION",
+      "COUNTRY"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q470466 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q470466 wdt:P17 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 109,
+    "question": "Кто рассказал о своей первой работе в повести «Записки на манжетах»?",
+    "entities": [
+      "Q4186681"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q4186681 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q4186681 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q835"
+    ]
+  },
+  {
+    "uid": 110,
+    "question": "Кто написал картину «Утро стрелецкой казни»?",
+    "entities": [
+      "Q4478998"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q4478998 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q4478998 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q110228"
+    ]
+  },
+  {
+    "uid": 111,
+    "question": "Какой город является административной столицей ЮАР?",
+    "entities": [
+      "Q258"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q258 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q258 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q3926",
+      "Q5465",
+      "Q37701"
+    ]
+  },
+  {
+    "uid": 112,
+    "question": "Как называется столица Румынии?",
+    "entities": [
+      "Q19660"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q19660 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q19660 wdt:P276 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 113,
+    "question": "В какой стране на население наводили ужас тонтон-макуты?",
+    "entities": [
+      "Q803917",
+      "Q33829",
+      "Q923766",
+      "Q1543778"
+    ],
+    "type": [
+      "COUNTRY",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q803917 wdt:P17 ?answer . wd:Q33829 wdt:P17 ?answer . wd:Q923766 wdt:P17 ?answer . wd:Q1543778 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q803917 wdt:P276 ?answer . wd:Q33829 wdt:P276 ?answer . wd:Q923766 wdt:P276 ?answer . wd:Q1543778 wdt:P276 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 114,
+    "question": "Какой стране принадлежит остров Эльба-место ссылки Наполеона?",
+    "entities": [
+      "Q45328",
+      "Q34497"
+    ],
+    "type": [
+      "COUNTRY",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q45328 wdt:P17 ?answer . wd:Q34497 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q45328 wdt:P276 ?answer . wd:Q34497 wdt:P276 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 115,
+    "question": "Где прошла коронация Наполеона I?",
+    "entities": [
+      "Q517"
+    ],
+    "type": [
+      "LOCATION",
+      "COUNTRY"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q517 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q517 wdt:P17 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 116,
+    "question": "Где расположен космодром Плесецк?",
+    "entities": [
+      "Q15778"
+    ],
+    "type": [
+      "LOCATION",
+      "COUNTRY"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q15778 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q15778 wdt:P17 ?answer }"
+    ],
+    "result": [
+      "Q1875"
+    ]
+  },
+  {
+    "uid": 117,
+    "question": "Кто является автором \"Композиции VI\"?",
+    "entities": [
+      "Q61064"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q61064 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q61064 wdt:P170 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 118,
+    "question": "Кто написал поэму \"Черный человек\"?",
+    "entities": [
+      "Q4518933"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q4518933 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q4518933 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q31628"
+    ]
+  },
+  {
+    "uid": 119,
+    "question": "Какой стране принадлежит знаменитый остров Пасхи?",
+    "entities": [
+      "Q14452"
+    ],
+    "type": [
+      "COUNTRY",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q14452 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q14452 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q298"
+    ]
+  },
+  {
+    "uid": 120,
+    "question": "Кто автор бессмертной \"Похвалы Глупости\"?",
+    "entities": [
+      "Q569869"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q569869 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q569869 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q43499"
+    ]
+  },
+  {
+    "uid": 121,
+    "question": "Как называется административный центр штата Аляска?",
+    "entities": [
+      "Q797"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q797 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q797 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q29445"
+    ]
+  },
+  {
+    "uid": 122,
+    "question": "Какой город является столицей Нагорно-Карабахской Республики?",
+    "entities": [
+      "Q244165"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q244165 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q244165 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q129352"
+    ]
+  },
+  {
+    "uid": 123,
+    "question": "Кто придумал комиссара Мегрэ?",
+    "entities": [
+      "Q830561"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q830561 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q830561 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q128790"
+    ]
+  },
+  {
+    "uid": 124,
+    "question": "Где в 1972 году прошли летние Олимпийские игры?",
+    "entities": [
+      "Q577",
+      "Q11410"
+    ],
+    "type": [
+      "LOCATION",
+      "COUNTRY"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q577 wdt:P276 ?answer . wd:Q11410 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q577 wdt:P17 ?answer . wd:Q11410 wdt:P17 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 125,
+    "question": "Кто написал картину «Сикстинская Мадонна»?",
+    "entities": [
+      "Q328079"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q328079 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q328079 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q5597"
+    ]
+  },
+  {
+    "uid": 126,
+    "question": "В какой стране расположен город Антверпен?",
+    "entities": [
+      "Q12892"
+    ],
+    "type": [
+      "COUNTRY",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q12892 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q12892 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q31"
+    ]
+  },
+  {
+    "uid": 127,
+    "question": "Кто написал картину \"Скачет красная конница из октябрьской столицы, на защиту советской границы\"?",
+    "entities": [
+      "Q1523506"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q1523506 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q1523506 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q211043"
+    ]
+  },
+  {
+    "uid": 128,
+    "question": "Какой стране принадлежат Канарские острова?",
+    "entities": [
+      "Q201689"
+    ],
+    "type": [
+      "COUNTRY",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q201689 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q201689 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q29"
+    ]
+  },
+  {
+    "uid": 129,
+    "question": "Кто из великих художников Возрождения расписывал Сикстинскую капеллу Ватикана?",
+    "entities": [
+      "Q2943"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q2943 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q2943 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q5592",
+      "Q576325",
+      "Q10289907"
+    ]
+  },
+  {
+    "uid": 130,
+    "question": "В каком из городов СССР была пущена первая в мире атомная электростанция?",
+    "entities": [
+      "Q65175522"
+    ],
+    "type": [
+      "LOCATION",
+      "COUNTRY"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q65175522 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q65175522 wdt:P17 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 131,
+    "question": "Какой город является столицей Австралии?",
+    "entities": [
+      "Q3114"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q3114 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q3114 wdt:P276 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 132,
+    "question": "Кто автор пьесы «Ромео и Джульетта»?",
+    "entities": [
+      "Q83186"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q83186 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q83186 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q692"
+    ]
+  },
+  {
+    "uid": 133,
+    "question": "Кто автор романа \"Спартак\"?",
+    "entities": [
+      "Q83406"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q83406 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q83406 wdt:P170 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 134,
+    "question": "Какой стране принадлежат Шантарские острова?",
+    "entities": [
+      "Q1109420"
+    ],
+    "type": [
+      "COUNTRY",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q1109420 wdt:P17 ?answer }",
+      "SELECT ?answer WHERE { wd:Q1109420 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q159"
+    ]
+  },
+  {
+    "uid": 135,
+    "question": "Какой город является столицей Лесото?",
+    "entities": [
+      "Q3909"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q3909 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q3909 wdt:P276 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 136,
+    "question": "Какой город является столицей Кирибати?",
+    "entities": [
+      "Q710"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q710 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q710 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q131233"
+    ]
+  },
+  {
+    "uid": 137,
+    "question": "В каком голландском городе находится Домик Петра I?",
+    "entities": [
+      "Q3661730"
+    ],
+    "type": [
+      "LOCATION",
+      "COUNTRY"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q3661730 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q3661730 wdt:P17 ?answer }"
+    ],
+    "result": [
+      "Q656"
+    ]
+  },
+  {
+    "uid": 138,
+    "question": "Кто создал социальную сеть Facebook ?",
+    "entities": [
+      "Q355"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q355 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q355 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q36215",
+      "Q312663",
+      "Q370217",
+      "Q370321"
+    ]
+  },
+  {
+    "uid": 139,
+    "question": "Кто написал сказку \"Карлик-Нос\"?",
+    "entities": [
+      "Q244019"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q244019 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q244019 wdt:P170 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 140,
+    "question": "Кто написал картину «Утро в сосновом лесу»?",
+    "entities": [
+      "Q2666439"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q2666439 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q2666439 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q193064"
+    ]
+  },
+  {
+    "uid": 141,
+    "question": "Какой город является столицей Удмуртской республики?",
+    "entities": [
+      "Q5422"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q5422 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q5422 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q5426"
+    ]
+  },
+  {
+    "uid": 142,
+    "question": "Кто написал картину \"Сад земных наслаждений\"?",
+    "entities": [
+      "Q321303"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q321303 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q321303 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q130531"
+    ]
+  },
+  {
+    "uid": 143,
+    "question": "Какой город является административным центром американского штата Арканзас?",
+    "entities": [
+      "Q1612"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q1612 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q1612 wdt:P276 ?answer }"
+    ],
+    "result": [
+      "Q33405"
+    ]
+  },
+  {
+    "uid": 144,
+    "question": "Кто написал портрет полковника лейб-гвардии Гусарского полка Евграфа Давыдова, долгое время считавшийся изображением Дениса Давыдова?",
+    "entities": [
+      "Q544983"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q544983 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q544983 wdt:P170 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 145,
+    "question": "Где правит королевский дом Бернадотов?",
+    "entities": [
+      "Q212163"
+    ],
+    "type": [
+      "LOCATION",
+      "COUNTRY"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q212163 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q212163 wdt:P17 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 146,
+    "question": "Столицей какой республики является Тегусигальпа?",
+    "entities": [
+      "Q3238"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q3238 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q3238 wdt:P276 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 147,
+    "question": "Как называется столица Камбоджи?",
+    "entities": [
+      "Q1850"
+    ],
+    "type": [
+      "CAPITAL",
+      "LOCATION"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q1850 wdt:P36 ?answer }",
+      "SELECT ?answer WHERE { wd:Q1850 wdt:P276 ?answer }"
+    ],
+    "result": []
+  },
+  {
+    "uid": 148,
+    "question": "Кто написал роман \"Зима тревоги нашей\"?",
+    "entities": [
+      "Q2063426"
+    ],
+    "type": [
+      "AUTHOR",
+      "CREATOR"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q2063426 wdt:P50 ?answer }",
+      "SELECT ?answer WHERE { wd:Q2063426 wdt:P170 ?answer }"
+    ],
+    "result": [
+      "Q39212"
+    ]
+  },
+  {
+    "uid": 149,
+    "question": "В каком городе находится Малахов курган?",
+    "entities": [
+      "Q586204"
+    ],
+    "type": [
+      "LOCATION",
+      "COUNTRY"
+    ],
+    "requests": [
+      "SELECT ?answer WHERE { wd:Q586204 wdt:P276 ?answer }",
+      "SELECT ?answer WHERE { wd:Q586204 wdt:P17 ?answer }"
+    ],
+    "result": [
+      "Q7525"
     ]
   }
 ]
